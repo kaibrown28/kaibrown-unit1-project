@@ -1,3 +1,110 @@
 *{
-    background-color: cornflowerblue; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+a{
+    text-decoration: none;
+}
+header {
+    border: black 1px dashed;
+    width: 100%;
+    
+}
+
+nav{
+    border: cyan 1px solid;
+    width: 100%;
+    
+    text-align: center;
+    padding: 10px 0px;
+   
+}
+
+nav a{
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: black 2px solid;
+    text-align: center;
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    flex: 0 1 auto;  
+}
+
+.sidebar{
+    border: 1px dashed pink;
+    margin-left: 10px;
+    margin-right: 12px;
+    width: 30%
+}
+
+.sidebar-top{
+    border: 1px dashed orange;
+    display:flex;
+    margin-left: 10px;
+    margin-right: 12px;
+}
+
+.sidebar-bottom{
+    border: 1px dashed greenyellow;
+    display:flex;
+    margin-left: 10px;
+    margin-right: 12px;
+}
+
+.page-main{
+    border: 1px solid fuchsia;
+    display:flex;
+    flex-grow:1.5;
+    margin-right:10px;
+}
+.contact-email{
+    color:green
+}
+
+.main-top{
+    border:1px solid black;
+    display:flex;
+    width:60%
+}
+
+.main-middle{
+    border: 1px solid navy;
+    display:flex;
+    width:60%
+}
+
+.main-bottom{
+    border: 1px solid darkolivegreen;
+    display:flex;
+    width:60%
+}
+
+.main-left #1 {
+    border:purple 1 px solid;
+    display:flex;
+}
+.main-left #2 {
+    border:gold 1 px solid;
+    display:flex;
+}
+#3 {
+    border:green 1 px solid;
+    display:flex;
+}
+#4 {
+    border:navy 1 px solid;
+    display:flex;
+}
+.main-right{
+    display:flex;
+    border: grey dashed 1px;
+}
+footer{
+    border: 3px double peru;
+    width: 100%;
+    position: absolute
 }
