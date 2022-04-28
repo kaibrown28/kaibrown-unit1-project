@@ -5,9 +5,22 @@ gray - (155,132,127)
 slategray -(98,113,163)
 darkslategray -(49,47,62) */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Noto+Serif&display=swap');
+
 *{
-    font-family: Arial, Helvetica, sans-serif;
     
+    flex: 0 1 auto;
+}
+
+a:hover{
+    color:yellow;
+    font-weight: bold;
+}
+
+body{
+    background-color: rgb(254,251,234);
+    font-family: 'Inter', sans-serif;
 }
 a{
     text-decoration: none;
@@ -15,23 +28,26 @@ a{
 header {
     border: black 1px dashed;
     width: 100%;
+    font-family: 'Noto Serif', serif;
     
 }
 
 nav{
     border: cyan 1px solid;
     width: 100%;
-    
+    background-color: rgba(49,47,62,1);
     text-align: center;
     padding: 10px 0px;
    
 }
 
 nav a{
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 3px;
-    border: black 2px solid;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    margin: .4em;
+    border: 1px solid white;
+    color:black;
+    background-color: rgb(204,184,180);
     text-align: center;
 }
 
@@ -39,30 +55,41 @@ nav a{
     display:flex;
     flex-direction: row;
     flex: 0 1 auto;  
+   
 }
 
 .sidebar{
     display:flex;
     flex-direction: column;
+    background-color:rgba(213,220,229,1);
     border: 1px dashed pink;
-    margin-left: 10px;
-    margin-right: 12px;
+
+    padding: 0em 2em;
     flex: 0 1 auto
 }
 
 .sidebar-top{
     border: 1px dashed orange;
     display:flex;
-    margin-left: 10px;
-    margin-right: 12px;
+    padding: 0em 2em;
     justify-content: center ;
 }
 
 .sidebar-bottom{
     border: 1px dashed greenyellow;
     display:flex;
-    margin: 0em 5em;
+    padding: 0em 2em;
     flex-direction: column;
+    background-color: rgb(204,184,180);
+    text-align: left
+}
+
+
+
+.sidebar-bottom li{
+    padding-bottom: 1em;
+    list-style-type:none;
+    
 }
 
 .main{
@@ -72,6 +99,9 @@ nav a{
     flex-direction:column;
     flex:  0 1 auto;
     padding: 3em 3em;
+    background-color: rgb(155,132,127);
+    color:rgb(213,220,229);
+    
     
 }
 .contact-email{
@@ -80,45 +110,57 @@ nav a{
 
 .main-top{
     border:1px solid black;
-    margin-top: -1em
+    margin-top: -1em;
+    background-color:rgb(98,113,163)
 }
 
 .main-middle{
     border: 1px solid navy;
     display:flex;
     flex:  0 1 auto;
+    background-color: rgb(98,113,163);
 }
 
 .main-bottom{
     border: 1px solid darkolivegreen;
     display:flex;
     flex:  0 1 auto;
+    background-color: rgb(98,113,163);
 }
 
 .job1, .job2, .job3, .job4, p{
     margin: .1em;
 }
-.job2 {
-    border:gold 1 px solid;
-    
-}
-.job3 {
-    border:green 1 px solid;
-    
-}
-.job4 {
-    border:navy 1 px solid;
-   
-}
+
 .main-right{
     /* display:flex; */
     border: grey dashed 1px;
+    background-color:rgb(98,113,163);
     
 }
+.main-left{
+    /* display:flex; */
+    border: white dashed 1px;
+    background-color:rgb(98,113,163);
+    
+}
+
+.main-left h3{
+    color:grey;
+    font-weight: bold;
+}
 footer{
-    border: 3px double peru;
     width: 100%;
-    position: absolute
+    background-color: rgba(49,47,62,1);
+    position: absolute;
+    display:inline;
+    text-align:center;
+    padding: .3em 1.5em;
+}
+
+footer a{
+    color: grey;
+    padding: 0em 2em;
 }
 
 h3 {
@@ -129,10 +171,12 @@ h3 {
 
 img{
     text-align: center;
+    margin-top: 2em;
 }
- span{
+span{
      text-align: center;
  }
+ 
 .skills-header{
     text-align:center;
 }
@@ -147,4 +191,18 @@ img{
  .resume-bottom{
      border: 1px solid goldenrod;
      margin-left: .6em;
+ }
+ .disclaimer{
+    text-transform: uppercase;
+    color:white;
+    font-size: x-small
+ }
+ button{
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    margin: .4em;
+    border: 1px solid white;
+    color:black;
+    background-color: rgb(204,184,180);
+    text-align: center;
  }
