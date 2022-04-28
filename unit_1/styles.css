@@ -35,10 +35,12 @@ nav a{
 }
 
 .sidebar{
+    display:flex;
+    flex-direction: column;
     border: 1px dashed pink;
     margin-left: 10px;
     margin-right: 12px;
-    width: 30%
+    flex: 0 1 auto
 }
 
 .sidebar-top{
@@ -46,65 +48,77 @@ nav a{
     display:flex;
     margin-left: 10px;
     margin-right: 12px;
+    justify-content: center ;
 }
 
 .sidebar-bottom{
     border: 1px dashed greenyellow;
     display:flex;
-    margin-left: 10px;
-    margin-right: 12px;
+    margin: 0em 5em;
+    flex-direction: column;
 }
 
-.page-main{
+.main{
     border: 1px solid fuchsia;
     display:flex;
-    flex-grow:1.5;
-    margin-right:10px;
+    margin-right:5 em;
+    flex-direction:column;
+    flex:  0 1 auto;
+    padding: 3em 3em;
+    
 }
 .contact-email{
-    color:green
+    color:green;
 }
 
 .main-top{
     border:1px solid black;
-    display:flex;
-    width:60%
+    margin-top: -1em
 }
 
 .main-middle{
     border: 1px solid navy;
     display:flex;
-    width:60%
+    flex:  0 1 auto;
 }
 
 .main-bottom{
     border: 1px solid darkolivegreen;
     display:flex;
-    width:60%
+    flex:  0 1 auto;
 }
 
-.main-left #1 {
-    border:purple 1 px solid;
-    display:flex;
+.job1, .job2, .job3, .job4, p{
+    margin: .1em;
 }
-.main-left #2 {
+.job2 {
     border:gold 1 px solid;
-    display:flex;
+    
 }
-#3 {
+.job3 {
     border:green 1 px solid;
-    display:flex;
+    
 }
-#4 {
+.job4 {
     border:navy 1 px solid;
-    display:flex;
+   
 }
 .main-right{
-    display:flex;
+    /* display:flex; */
     border: grey dashed 1px;
+    
 }
 footer{
     border: 3px double peru;
     width: 100%;
     position: absolute
+}
+
+h3 {
+    justify-content: center ;
+    margin-bottom: .1em;
+}
+
+img{
+    text-align: center;
 }
