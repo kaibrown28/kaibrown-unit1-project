@@ -10,8 +10,9 @@ darkslategray -(49,47,62) */
 
 *{
     
-    flex: 0 1 auto;
+   box-sizing: border-box;
 }
+
 
 a:hover{
     color:yellow;
@@ -24,7 +25,9 @@ body{
 }
 a{
     text-decoration: none;
+    color:black;
 }
+
 header {
     border: black 1px dashed;
     width: 100%;
@@ -206,3 +209,9 @@ span{
     background-color: rgb(204,184,180);
     text-align: center;
  }
+
+ @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
