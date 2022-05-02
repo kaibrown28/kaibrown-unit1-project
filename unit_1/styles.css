@@ -57,6 +57,7 @@ button{
     padding-left: 1.5em;
     margin: .4em;
     border: 1px solid white;
+    border-radius: .5em;
     color:black;
     background-color: rgb(204,184,180);
     text-align: center;
@@ -64,7 +65,7 @@ button{
 
 /* navigation */
 nav{
-    border: cyan 1px solid;
+
     width: 100%;
     background-color: rgba(49,47,62,1);
     text-align: center;
@@ -77,6 +78,7 @@ nav a{
     padding-left: 1.5em;
     margin: .4em;
     border: 1px solid white;
+    border-radius: .5em;
     color:black;
     background-color: rgb(204,184,180);
     text-align: center;
@@ -98,22 +100,21 @@ nav a{
     display:flex;
     flex-direction: column;
     background-color:rgba(213,220,229,1);
-    border: 1px dashed pink;
-
     padding: 0em 2em;
     flex: 0 1 auto
 }
 
 .sidebar-top{
-    border: 1px dashed orange;
+    border-radius: .5em;
     display:flex;
     padding: 0em 2em;
     justify-content: center ;
     background-color: black;
+    flex-direction: row;
 }
 
 .sidebar-bottom{
-    border: 1px dashed greenyellow;
+    border-radius: .5em;
     display:flex;
     padding: 0em 2em;
     flex-direction: column;
@@ -135,7 +136,6 @@ nav a{
    
 }
 .main{
-    border: 1px solid fuchsia;
     display:flex;
     margin-right:5 em;
     flex-direction:column;
@@ -151,7 +151,8 @@ p{
 
 /* main, or left side elements */
 .main-top{
-    border:1px solid black;
+    border:2px solid black;
+    border-radius: .5em;
     display:flex;
     margin-top: -1em;
     background-color:rgb(98,113,163);
@@ -159,33 +160,39 @@ p{
 }
 
 .main-middle{
-    border: 1px solid navy;
+    border:2px solid black;
+    border-radius: .5em;
     display:flex;
     flex:  0 1 auto;
     background-color: rgb(98,113,163);
     flex-direction:column;
+    margin-top: 1em;
 }
 
 .main-bottom{
-    border: 1px solid darkolivegreen;
+    border:2px solid black;
+    border-radius: .5em;
     display:flex;
     flex:  0 1 auto;
     background-color: rgb(98,113,163);
     flex-direction:column;
+    margin-top:1em;
 }
 
 
 
 .main-right{
     /* display:flex; */
-    border: grey dashed 1px;
     background-color:rgb(98,113,163);
+    border:2px solid black;
+    border-radius: .5em;
     
 }
 .main-left{
     /* display:flex; */
-    border: white dashed 1px;
     background-color:rgb(98,113,163);
+    border:2px solid black;
+    border-radius: .5em;
     
 }
 
@@ -221,12 +228,16 @@ footer a{
 h3 {
     justify-content: center ;
     margin-bottom: .1em;
+    text-align: center;
   
 }
 
-img{
+.images{
     text-align: center;
-    margin-top: 2em;
+    margin:auto;
+    border-radius: .5em;
+    border: 1px white solid
+    
 }
 /* resume specific */
 span{
