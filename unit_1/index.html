@@ -6,13 +6,11 @@
 		<!-- FONTS -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Noto+Serif&display=swap" rel="stylesheet">
-		
-        
-        
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Noto+Serif&display=swap" rel="stylesheet">  
         <link rel="stylesheet" href="styles.css"
 		/>
 		<!-- SCRIPTS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.min.js"
 			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -21,47 +19,58 @@
 		<script src="app.js" charset="utf-8"></script>
 	</head>
 <body>
-    <header>
+    <header >
         <h1>kbrpro.net</h1>
     </header>
-    <nav>
-        <a href="index.html" class="nav" target="_blank">Home</a>
+    <nav onReady="navFade()" class="topNav">
+        <a href="index.html" class="nav-home" target="_blank">Home</a>
         <a href="bio.html" class="nav" target="_blank">About Me</a>
         <a href="resume.html" class="nav" target="_blank">Resume</a>
         <a href="projects.html" class="nav" target="_blank">Projects</a>
-        <a href="blog.html" class="nav" target="_blank">Blog</a>
-        <button>Click Me!</button>
+        <!-- <a href="blog.html" class="nav" target="_blank">Blog</a> -->
+        <button onclick="colorChange()" class="colorChange">Click Me!</button>
     </nav>
     <div class="flex-container">
         <div class="sidebar">
             <h2>What's new?</h2>
                 <ul>
-                    <li>ipsum</li>
-                    <li>lorem</li>
-                    <li>destati</li>
-                    <li>liberi</li>
-                    <li>fatali</li>
-                    <li>sephiroth</li>
+                    <li><a onclick="rickRoll()"id="warning" href="https://www.youtube.com/watch?v=cvh0nX08nRw" target="_blank">Rickety Rolls  - Don't do it.</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=M8el_P4yvfc" target="_blank">Owls!</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=ZZ5LpwO-An4" target="_blank">He-Man!</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=KaqC5FnvAEc" target="_blank">Trolls</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=JImcvtJzIK8" target="_blank">Rum</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=uE-1RPDqJAY" target="_blank">Isengard</a></li>
                 </ul>
         </div>
         <div class="main">
-            <p class="main-top">Maybe break this up into sections too? Cards?
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed velit auctor, efficitur magna id, porttitor turpis. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat lorem ac mi finibus, a ullamcorper justo imperdiet. Quisque consectetur vel sem sit amet commodo. Fusce iaculis velit sed velit rutrum, in finibus nunc euismod. Proin quis leo id velit volutpat interdum sit amet quis libero. Integer sed augue eget lectus faucibus ultrices. Curabitur elementum, arcu a vulputate rhoncus, risus diam accumsan nisi, quis vulputate quam sem sit amet urna. 
-            </p>     
+            <p class="main-top">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed velit auctor, efficitur magna id, porttitor turpis. <span id="dots">...</span><span class="more">Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas feugiat lorem ac mi finibus, a ullamcorper justo imperdiet. Quisque consectetur vel sem sit amet commodo. Fusce iaculis velit sed velit rutrum, in finibus nunc euismod. Proin quis leo id velit volutpat interdum sit amet quis libero. Integer sed augue eget lectus faucibus ultrices. Curabitur elementum, arcu a vulputate rhoncus, risus diam accumsan nisi, quis vulputate quam sem sit amet urna. 
+                
+                Cras molestie, ipsum blandit ultrices feugiat, eros eros facilisis orci, id auctor magna augue tincidunt justo. Cras vulputate condimentum bibendum. Aliquam tristique lectus non arcu lobortis, vitae rutrum est pulvinar. Nulla vulputate vestibulum felis, ac lobortis tellus sollicitudin a. Aliquam a volutpat purus. Sed id dolor et quam blandit molestie eu nec massa. Etiam imperdiet lectus a congue dictum. Maecenas mollis sagittis malesuada. Mauris vehicula ultricies augue, nec tempor sapien vestibulum sed. Donec ullamcorper lorem enim, sit amet euismod erat rutrum ut. Duis sed imperdiet massa. Etiam facilisis tellus elit, et accumsan eros ultricies vel. In interdum nisi eget purus varius pharetra non a purus. Donec ultrices urna in efficitur auctor.
+                </span>
+                <button onclick="showMore()" class="txtBtn">Read More</button> 
+                </p>
+              
             <p class="main-middle">  
-                Curabitur nec erat sed massa lobortis maximus      at sit amet orci. Morbi molestie, dui nec luctus fringilla, augue leo consectetur odio, et pulvinar massa urna sit amet ligula. Donec semper eros nec sem tempor tristique. Vestibulum bibendum elit turpis, sit amet sodales dui luctus dictum.
+                Curabitur nec erat sed massa lobortis maximus at sit amet orci. Morbi molestie, dui nec luctus fringilla, augue leo consectetur odio, et pulvinar massa urna sit amet ligula. Donec semper eros nec sem tempor tristique. Vestibulum bibendum elit turpis, sit amet sodales dui luctus dictum.
 
-                Etiam placerat scelerisque leo, sed ultrices lectus pellentesque vitae. Nullam convallis bibendum arcu. Vestibulum convallis aliquam ex, vel pretium lorem consectetur vitae. Etiam pulvinar convallis molestie. </p>
+                Etiam placerat scelerisque leo, sed ultrices lectus pellentesque vitae. Nullam convallis bibendum arcu. Vestibulum convallis aliquam ex, vel pretium lorem consectetur vitae. Etiam pulvinar convallis molestie.
+                
+                </p>
+                 
                 <p class="main-bottom">
                 Pellentesque congue enim efficitur massa suscipit, nec facilisis odio ullamcorper. Vivamus purus arcu, efficitur nec dolor et, tincidunt scelerisque odio. Nam scelerisque eros nisl, nec condimentum metus placerat ac. Donec vulputate eros et urna vestibulum tincidunt. Aenean pharetra ullamcorper quam, commodo hendrerit enim placerat vel. Fusce a augue in turpis suscipit fringilla. Proin ultricies urna sit amet lectus dapibus, vel mattis odio pulvinar. Aliquam pulvinar urna lacus, eu imperdiet justo posuere sit amet. Duis id purus diam. Morbi eros magna, gravida ac interdum quis, pulvinar nec elit. Proin non scelerisque dui, vel mollis tellus. Sed consequat justo sed rutrum volutpat.
+               
+                 
             </p>
+             
         </div>
         </div>
     </div>
     <footer>
         <a href="https://www.linkedin.com/in/kaibrown28/" class="footer">LinkedIn </a>
         <a href="https://github.com/kbrpronet" class="footer">GitHub</a>
-        <a href="kaibrown28@outlook.com">Email Me!</a> 
+        <a href="mailto:kaibrown28@outlook.com">Email Me!</a> 
         <p class="disclaimer">This is a project website created by Kai Brown, 2022 <br>This is not intended for professional use.</p>
     </footer>
 </body>
