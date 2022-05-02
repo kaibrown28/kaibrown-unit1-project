@@ -9,25 +9,26 @@ darkslategray -(49,47,62) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Noto+Serif&display=swap');
 
 *{
-    
-   box-sizing: border-box;
+      box-sizing: border-box;
 }
-
-
-a:hover{
-    color:yellow;
-    font-weight: bold;
-}
-
-body{
-    background-color: rgb(254,251,234);
-    font-family: 'Inter', sans-serif;
-}
+/* links */
 a{
     text-decoration: none;
     color:black;
 }
 
+a:hover{
+    color:yellow;
+    font-weight: bold;
+}
+/*  */
+
+body{
+    background-color: rgb(254,251,234);
+    font-family: 'Inter', sans-serif;
+}
+
+/* header/logo  */
 header {
     border: black 1px dashed;
     width: 100%;
@@ -35,6 +36,17 @@ header {
     
 }
 
+button{
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    margin: .4em;
+    border: 1px solid white;
+    color:black;
+    background-color: rgb(204,184,180);
+    text-align: center;
+ }
+
+/* navigation */
 nav{
     border: cyan 1px solid;
     width: 100%;
@@ -54,13 +66,7 @@ nav a{
     text-align: center;
 }
 
-.flex-container{
-    display:flex;
-    flex-direction: row;
-    flex: 0 1 auto;  
-   
-}
-
+/* sidebars */
 .sidebar{
     display:flex;
     flex-direction: column;
@@ -87,14 +93,19 @@ nav a{
     text-align: left
 }
 
-
-
 .sidebar-bottom li{
     padding-bottom: 1em;
     list-style-type:none;
     
 }
 
+/* flexcontainers */
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    flex: 0 1 auto;  
+   
+}
 .main{
     border: 1px solid fuchsia;
     display:flex;
@@ -107,10 +118,8 @@ nav a{
     
     
 }
-.contact-email{
-    color:green;
-}
 
+/* main, or left side elements */
 .main-top{
     border:1px solid black;
     margin-top: -1em;
@@ -131,9 +140,7 @@ nav a{
     background-color: rgb(98,113,163);
 }
 
-.job1, .job2, .job3, .job4, p{
-    margin: .1em;
-}
+
 
 .main-right{
     /* display:flex; */
@@ -152,6 +159,7 @@ nav a{
     color:grey;
     font-weight: bold;
 }
+/* footer elements */
 footer{
     width: 100%;
     background-color: rgba(49,47,62,1);
@@ -166,6 +174,16 @@ footer a{
     padding: 0em 2em;
 }
 
+.contact-email{
+    color:green;
+}
+.disclaimer{
+    text-transform: uppercase;
+    color:white;
+    font-size: x-small
+ }
+/*  */
+
 h3 {
     justify-content: center ;
     margin-bottom: .1em;
@@ -176,6 +194,7 @@ img{
     text-align: center;
     margin-top: 2em;
 }
+/* resume specific */
 span{
      text-align: center;
  }
@@ -195,20 +214,11 @@ span{
      border: 1px solid goldenrod;
      margin-left: .6em;
  }
- .disclaimer{
-    text-transform: uppercase;
-    color:white;
-    font-size: x-small
- }
- button{
-    padding-right: 1.5em;
-    padding-left: 1.5em;
-    margin: .4em;
-    border: 1px solid white;
-    color:black;
-    background-color: rgb(204,184,180);
-    text-align: center;
- }
+
+ .job1, .job2, .job3, .job4, p{
+    margin: .1em;
+}
+ /*  */
 
  @media only screen and (max-width: 600px) {
     body {
